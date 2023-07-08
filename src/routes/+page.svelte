@@ -3,14 +3,16 @@
     import Sideicons from '../components/sideicons.svelte';
     import Header from '../components/header.svelte';
     import Skills from '../components/skills.svelte';
-    import WorkAnino from '../components/work_anino.svelte';
     import WorkNip from '../components/work_nip.svelte';
+    import WorkAnino from '../components/work_anino.svelte';
+    import WorkAnino2 from '../components/work_anino2.svelte';
+    import WorkNCS from '../components/work_ncs.svelte';
 </script>
 
 <Header />
 <body class="bg-gradient-to-r from-indigo-200 to-indigo-400"> 
     <div class="flex items-center justify-center">        
-        <h1 id="lastname" class="ml-5 pt-3">RANGEL</h1>
+        <h1 id="lastname" class="ml-5 pt-3">Jerico RANGEL</h1>
     </div>
     <div class="flex items-center justify-center">
         <h3>Physicist turned <i>Data Engineer</i></h3>
@@ -28,6 +30,12 @@
             <div class="px-5 rounded-2xl bg-slate-200 shadow-2xl">
                <h1> Work Experience </h1>
             </div>
+        </div>
+        <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
+            <WorkNCS />
+        </div>
+        <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
+            <WorkAnino2 />
         </div>
         <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
             <WorkAnino />

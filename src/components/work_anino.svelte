@@ -4,7 +4,7 @@
            <h1> Data Engineer</h1> 
         </div>
         <div class="italic text-xl">
-            October 2022 - Present
+            October 2022 - April 2023
         </div>
     </div>
     <div class="flex items-center justify-between px-3">
@@ -25,9 +25,9 @@
             My day-to-day work involves developing and implementing
             end-to-end data ingestion pipelines for our main project
             <a class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href = "https://play.google.com/store/apps/details?id=com.anino.battleslots&hl=en&gl=US&pli=1" target="_blank" rel="noreferrer">Battle Spins</a>. 
-            This includes both ETL and analytics work. Attached below are some of the charts
-            I automate on our enterprise customer-relationship management (CRM) application.
-            I also work on adhoc data requests, data quality assurance, and overall management of DataOps.
+            This includes ETL, data orchestration, data quality testing, analytics, and data governance. 
+            Basically I was the Product Owner of our Self-serve analytics platform. 
+            It was a small company (~30 people), so for anything data related, i'd be the point person.
         </p>
     </div>
 </div>
