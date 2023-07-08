@@ -1,8 +1,10 @@
-# Working on local
+First personal website/portfolio. Honestly as a DE and DevOps guy, I did more work implementing smooth deployment (since sveltekit does not integrate perfectly with github pages, yet).
 
-Use `npm run dev` to develop
+## Working on local
 
-# Deploying to github pages
+Use `npm run dev` to develop. This will make the site accessible on http://localhost:5173/ by default.
+
+## Deploying to github pages
 
 1. Run the ff: 
 
