@@ -1,5 +1,7 @@
 First personal website/portfolio. Honestly as a DE and DevOps guy, I did more work implementing smooth deployment (since sveltekit does not integrate perfectly with github pages, yet) than I did actually designing and making the site haha.
 
+Website is accessible here: [https://jtrangel.github.io/DevPortfolio/](https://jtrangel.github.io/DevPortfolio/)
+
 ## Working on local
 
 Use `npm run dev` to develop. This will make the site accessible on http://localhost:5173/ by default.
