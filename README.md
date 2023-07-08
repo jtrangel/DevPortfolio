@@ -1,4 +1,4 @@
-First personal website/portfolio. Honestly as a DE and DevOps guy, I did more work implementing smooth deployment (since sveltekit does not integrate perfectly with github pages, yet).
+First personal website/portfolio. Honestly as a DE and DevOps guy, I did more work implementing smooth deployment (since sveltekit does not integrate perfectly with github pages, yet) than I did actually designing and making the site haha.
 
 ## Working on local
 
