@@ -1,72 +1,103 @@
-
 <script>
-    import Sideicons from '../components/sideicons.svelte';
-    import Header from '../components/header.svelte';
-    import Skills from '../components/skills.svelte';
-    import WorkNip from '../components/work_nip.svelte';
-    import WorkAnino from '../components/work_anino.svelte';
-    import WorkAnino2 from '../components/work_anino2.svelte';
-    import WorkNCS from '../components/work_ncs.svelte';
+	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
+	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
 </script>
 
-<Header />
-<body class="bg-gradient-to-r from-indigo-200 to-indigo-400"> 
-    <div class="flex items-center justify-center">        
-        <h1 id="lastname" class="ml-5 pt-3">Jerico RANGEL</h1>
-    </div>
-    <div class="flex items-center justify-center">
-        <h3>Physicist turned <i>Data Engineer</i></h3>
-    </div>
-    <div class="h-20">
-    </div>
-    <Sideicons />
-    <div class = "grid grid-cols-8 gap-4">
-        <div id="container" class="col-start-3 col-span-4 rounded-2xl">
-            <Skills />
-        </div>
-        <div class="col-start-2 col-span-6 h-20 row-span-3">
-        </div>
-        <div class="col-start-2 col-span-6 flex">
-            <div class="px-5 rounded-2xl bg-slate-200 shadow-2xl">
-               <h1> Work Experience </h1>
-            </div>
-        </div>
-        <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
-            <WorkNCS />
-        </div>
-        <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
-            <WorkAnino2 />
-        </div>
-        <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
-            <WorkAnino />
-        </div>
-        <div class="col-start-2 col-span-6 rounded-2xl bg-slate-50 shadow-2xl">
-            <WorkNip />
-        </div>
-    </div>
-    <br>
+<main>
+	<h1>Nice to meet you!👋 <br /> I'm Jerico, a Physicist 📚 <br /> turned Data Engineer 💻.</h1>
+    <div class="icons">
+		<a
+			href="https://github.com/jtrangel"
+			aria-label="GitHub"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<div class="icon">
+				<FaGithub />
+			</div>
+		</a>
+		<a
+			href="https://www.linkedin.com/in/jerico-rangel/"
+			aria-label="Linkedin"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<div class="icon">
+				<FaLinkedin />
+			</div>
+		</a>
+		<!-- <a
+			href="https://stackoverflow.com/users/20385032/jerico-rangel"
+			aria-label="StackOverflow"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<div class="icon">
+				<svg class="rounded-xl" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm10.488 8.272l5.531 3.243-.686 1.162-5.532-3.243.687-1.162zm-1.456 3.113l6.185 1.739-.331 1.23-6.204-1.667.35-1.302zm-.672 2.813l6.498.65-.118 1.28-6.504-.586.124-1.344zm-.193 2.469h6.667v1.333h-6.667v-1.333zm8.833 3.333h-11v-7h1v6h9v-6h1v7zm-.852-8.704l-3.56-5.219 1.115-.76 3.559 5.219-1.114.76zm1.356-.841l-1.08-6.224 1.328-.231 1.081 6.224-1.329.231z"/></svg>
+			</div>
+		</a> -->
+	</div>
+</main>
 
-<footer id="footer" class="text-center p-5 text-gray-600 border-t-[1px] border-grey-100">
-    &#169; 2023 Jerico Rangel
-<footer/>    
-</body>
+<style>
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	main {
+		text-align: center;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;
 
-<style lang="postcss">
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 80px - 88px);
+		justify-content: center;
+		align-items: center;
+	}
 
-#lastname{
-    font-size: 128px;
-    font-weight: 1000;
-    color: black;
-    letter-spacing: 4px;
-}
-h3{
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: -12px;
-}
-h1{
-    font-size: 64px;
-    font-weight: 900;
-}  
+	h1 {
+		font-weight: 700;
+	}
 
+	main > h1 {
+		margin: 50px 10px 0;
+		font-size: 36px;
+	}
+
+	.icons {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center;
+		gap: 20px;
+		cursor: pointer;
+		font-size: 30px;
+		display: flex;
+		justify-content: space-between;
+		max-width: 200px;
+		margin: 50px auto 0;
+	}
+
+	.icon {
+		cursor: pointer;
+		transition: color 0.2s ease-in-out;
+		width: 40px;
+		color: black;
+	}
+	.icon:hover {
+		color: #ca3c25;
+	}
+
+	@media (min-width: 900px) {
+		main > h1 {
+			font-size: 48px;
+		}
+	}
+
+	@media (min-width: 600px) {
+		main {
+			max-width: none;
+		}
+	}
 </style>
