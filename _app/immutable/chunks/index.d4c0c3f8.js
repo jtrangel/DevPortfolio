@@ -1,0 +1,1 @@
+import{_ as n}from"./preload-helper.a4192956.js";async function i(t,a=!0){await t.addInteractor("externalPause",async r=>{const{Pauser:e}=await n(()=>import("./Pauser.20c38849.js"),["./Pauser.20c38849.js","./ExternalInteractorBase.029fb1b6.js"],import.meta.url);return new e(r)},a)}export{i as loadExternalPauseInteraction};

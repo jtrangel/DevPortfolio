@@ -1,0 +1,1 @@
+import{_ as i}from"./preload-helper.a4192956.js";async function o(a,e=!0){const{LineDrawer:t}=await i(()=>import("./LineDrawer.34dcdbef.js"),[],import.meta.url);await a.addShape("line",new t,e)}export{o as loadLineShape};

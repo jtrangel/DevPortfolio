@@ -1,0 +1,1 @@
+import{_ as t}from"./preload-helper.a4192956.js";async function i(a,e=!0){const{SquareDrawer:r}=await t(()=>import("./SquareDrawer.02ffc8fe.js"),[],import.meta.url);await a.addShape(["edge","square"],new r,e)}export{i as loadSquareShape};
