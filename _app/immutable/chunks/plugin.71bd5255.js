@@ -1,0 +1,1 @@
+import{_ as o}from"./preload-helper.a4192956.js";async function u(i,t=!0){const{LinksPlugin:n}=await o(()=>import("./LinksPlugin.58706aae.js"),["./LinksPlugin.58706aae.js","./preload-helper.a4192956.js"],import.meta.url),a=new n;await i.addPlugin(a,t)}export{u as loadLinksPlugin};
