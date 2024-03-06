@@ -19,7 +19,7 @@
                 enable: true
             },
             number: {
-                value: 30
+                value: 12
             }
         },
 		interactivity: {

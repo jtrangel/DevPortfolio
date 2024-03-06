@@ -40,7 +40,7 @@
 
 		<div class="grid">
 			<div class="grid-item">
-				<img src={pythonIcon} alt="Python" class="logo" style="width: 150px; height: 130px;" />
+				<img src={pythonIcon} alt="Python" style="width: 150px; height: 130px;" />
 			</div>
 			<div class="grid-item">
 				<img src={sqlIcon} alt="SQL" style="width: 100px; height: 100px;" />
@@ -73,6 +73,7 @@
 <style>
 	.container {
 		max-width: 900px;
+		width: 90vw;
 		padding: 0;
 		display: flex;
 		justify-content: center;
@@ -93,6 +94,7 @@
 		text-align: start;
 	}
 	.picture-frame {
+		max-width: 900px;
 		width: 350px; 
 		height: 350px; 
 		border-radius: 50%; 
@@ -110,12 +112,19 @@
 	}
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr); 
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		gap: 30px; 
+		flex-direction: column;
 	}
 
 	.grid-item {
 		padding: 20px;
 		text-align: center;
 	}
+
+	@media screen and (max-width: 600px) { /* Adjust breakpoint as needed */
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Change to 2 columns */
+    }
+  }
 </style>
