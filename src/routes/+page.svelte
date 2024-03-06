@@ -1,7 +1,86 @@
 <script>
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
+	import Particles, { particlesInit } from '@tsparticles/svelte';
+    import { loadSlim } from '@tsparticles/slim'; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+
+    let particlesUrl = 'http://foo.bar/particles.json'; // placeholder, replace it with a real url
+
+    let particlesConfig = {
+        particles: {
+            color: {
+                value: '#000'
+            },
+            links: {
+                enable: true,
+                color: '#000'
+            },
+            move: {
+                enable: true
+            },
+            number: {
+                value: 30
+            }
+        },
+		interactivity: {
+			events:{
+				onClick: {
+					enable: true,
+					mode: 'push'
+				},
+				onHover: {
+					enable: false,
+					mode: 'repulse'
+				}
+			}
+		},
+		opacity: {
+			value: 100,
+			random: false,
+			anim: {
+				enable: false,
+				speed: 1,
+				opacity_min: 0.1,
+				sync: false
+			}
+		},
+		size: {
+			value: 3,
+			random: true,
+			anim: {
+				enable: false,
+				speed: 20,
+				size_min: 0.1,
+				sync: false
+			}
+		}
+    }
+
+    let onParticlesLoaded = (event) => {
+        const particlesContainer = event.detail.particles;
+    };
+    void particlesInit(async (engine) => {
+        await loadSlim(engine);
+    });
 </script>
+
+<Particles
+        id="tsparticles"
+        class="put your classes here"
+        style=""
+        options="{particlesConfig}"
+        on:particlesLoaded="{onParticlesLoaded}"
+/>
+
+<!-- or -->
+
+<Particles
+        id="tsparticles"
+        class="put your classes here"
+        style=""
+        url="{particlesUrl}"
+        on:particlesLoaded="{onParticlesLoaded}"
+/>
 
 <main>
 	<h1>Nice to meet you!👋 <br /> I'm Jerico, a Physicist 📚 <br /> turned Data Engineer 💻.</h1>
