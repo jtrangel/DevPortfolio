@@ -11,9 +11,7 @@ Use `npm run dev` to develop. This will make the site accessible on http://local
 1. Run the ff: 
 
 ```
-npm run gh-pages
-
-npm run deploy
+npm run gh-pages && npm run deploy
 ```
 
 This will deploy the build to the `gh-pages` branch, which Github Pages sources from. 
